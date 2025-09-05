@@ -5,79 +5,77 @@
     <meta charset="utf-8" />
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <title>Sol Martinez - TP1</title>
+    <link rel="icon" href="img/favicon.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="img/favicon-light.svg" media="(prefers-color-scheme: light)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
+            <img src="img/logo.svg" width="38px" height="28px" alt="logo sm">
             <a href="#">INFO</a>
             <a href="#">GALERÍA</a>
             <a href="#">CONTACTO</a>
+            <input type="text" placeholder="Buscar...">
         </nav>
     </header>
 
     <main>
-        
-        <h1 >BIENVENIDOS/AS</h1>
 
-        <!-- todavía falta agregar la foto y reacomodar el aside -->
-        <aside>
-            <img src="img/foto de perfil.png" alt="">
-            <p>Soy Sol Martinez, diseñadora gráfica y artista visual de Argentina, Buenos Aires. Estudiante en la
-                licenciatura de Diseño y Comunicación Visual de la Universidad de Lanús.
-                Con un interés especial por el diseño de identidad, editorial y en la exploración de piezas gráficas
-                combinadas con técnicas manuales.</p>
-        </aside>
-
-        <section class="listas-principal">
-            <article>
-                <h2>Algunos proyectos/.</h2>
-                <ol class="lista-cv">
-                    <li>2024. Prácticas pre-profesionales: señalética y cartelería del CICyT Abremate. Participación en las instancias iniciales del diseño del mapa de la UNLa.</li>
-                    <li>2023. Participación en el proyecto Non Sapere de Civic City.</li>
-                    <li>2021-actualidad. Diseñadora independiente.</li>
-                </ol>
-            </article>
-
-            <article>
-                <h2>Habilidades/.</h2>
-                <ul class="lista-cv">
-                    <li>Buen manejo de Adobe Illustrator, Photoshop e InDesign.</li>
-                    <li>Dominio de artes plásticas.</li>
-                    <li>Nivel intermedio de inglés.</li>
-                </ul>
-            </article>
-
-            <article>
-                <h2>Contacto/.</h2>
-                <ul class="lista-cv">
-                    <li>sol.c.martinez00@gmail.com</li>
-                    <li>+54 9 42454242425</li>
-                </ul>
-            </article>
+        <section class="intro" >
+            <h1>SOL MARTINEZ</h1>
+                <button>
+                    <a class="a-boton" href="https://www.behance.net/solcmartinez#" target="_blank"> VER PORTAFOLIO </a>
+                </button>
         </section>
+            
+        <div class="columnas">
+            <section class="listas-principales">
+                <article>
+                    <h2>Algunos proyectos/.</h2>
+                    <ol class="lista-cv">
+                        <li>2024. Prácticas pre-profesionales: señalética y cartelería del CICyT Abremate. Participación en las instancias iniciales del diseño del mapa de la UNLa.</li>
+                        <li>2023. Participación en el proyecto Non Sapere de Civic City.</li>
+                        <li>2021-actualidad. Diseñadora independiente.</li>
+                    </ol>
+                </article>
+
+                <article>
+                    <h2>Habilidades/.</h2>
+                    <ul class="lista-cv">
+                        <li>Buen manejo de Adobe Illustrator, Photoshop e InDesign.</li>
+                        <li>Dominio de artes plásticas.</li>
+                        <li>Nivel intermedio de inglés.</li>
+                        <li>Predisposición al trabajo en equipo.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Contacto/.</h2>
+                    <ul class="lista-cv">
+                        <li>sol.c.martinez00@gmail.com</li>
+                        <li>+54 9 42454242425</li>
+                        <li>Dirección 645</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="presentacion">
+                <img src="img/foto de perfil.png" width="230px" height="220px" alt="">
+                <p>Soy Sol Martinez, diseñadora gráfica y artista visual de Argentina, Buenos Aires. Estudiante en la
+                    licenciatura de Diseño y Comunicación Visual de la Universidad de Lanús. Con un interés especial por el diseño de identidad, editorial y en la exploración de piezas gráficas
+                    combinadas con técnicas manuales.</p>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>Sol Martinez. 2025.</p>
-        <p>Computación III</p>
-        <ul>
-            <li class="lista-cv">
-                <img src="" alt="">
-                <a href="https://www.behance.net/solcmartinez#"> Behance </a>
-            </li>
-            <li class="lista-cv">
-                <img src="" alt="">
-                <a href=""> Correo </a>
-            </li>
-        </ul>
+        <p class="footer">Sol Martinez, 2025</p>
+        <p class="footer">Computación III</p>
+        <a class="footer" href="https://www.behance.net/solcmartinez#" target="_blank"> Behance </a>
     </footer>
 </body>
 
