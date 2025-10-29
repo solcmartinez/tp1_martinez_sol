@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link href="estilos.css" rel="stylesheet" type="text/css">
-    <title>Sol Martinez - TP1</title>
+    <title>Sol Martinez</title>
     <link rel="icon" href="img/favicon-darkmode.svg" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="img/favicon-lightmode.svg" media="(prefers-color-scheme: light)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,61 +15,29 @@
 <body>
     <header>
         <nav>
-            <img src="img/logo.svg" width="38px" height="28px" alt="logo sm">
-            <a href="#">INFO</a>
-            <a href="#">GALERÍA</a>
-            <a href="#">CONTACTO</a>
-            <input type="text" placeholder="Buscar...">
+            <a href="index.html"> <img src="img/logo.svg" width="38px" height="28px" alt="logo sm"> </a>
+            <div class="navegador">    
+                <a href="curriculum.html">SOBRE MI</a>
+                <a href="proyectos.html">PROYECTOS</a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <img src="img/lupa.svg" width="14px" height="14px" alt="icon lupa">
+            </div>
         </nav>
     </header>
 
     <main>
-
-        <section class="intro" >
-            <h1>SOL MARTINEZ</h1>
-                <button>
-                    <a class="a-boton" href="https://www.behance.net/solcmartinez#" target="_blank"> VER PORTAFOLIO </a>
-                </button>
+        <section>
+            <img src="img/intro.gif" width="1920" height="1080" alt="gif figuras abstractas">
         </section>
-            
-        <div class="columnas">
-            <section class="listas-principales">
-                <article>
-                    <h2>Algunos proyectos/.</h2>
-                    <ol class="lista-cv">
-                        <li>2024. Prácticas pre-profesionales: señalética y cartelería del CICyT Abremate. Participación en las instancias iniciales del diseño del mapa de la UNLa.</li>
-                        <li>2023. Participación en el proyecto Non Sapere de Civic City.</li>
-                        <li>2021-actualidad. Diseñadora independiente.</li>
-                    </ol>
-                </article>
 
-                <article>
-                    <h2>Habilidades/.</h2>
-                    <ul class="lista-cv">
-                        <li>Buen manejo de Adobe Illustrator, Photoshop e InDesign.</li>
-                        <li>Dominio de artes plásticas.</li>
-                        <li>Nivel intermedio de inglés.</li>
-                        <li>Predisposición al trabajo en equipo.</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <h2>Contacto/.</h2>
-                    <ul class="lista-cv">
-                        <li>sol.c.martinez00@gmail.com</li>
-                        <li>+54 9 42454242425</li>
-                        <li>Dirección 645</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section class="presentacion">
-                <img src="img/foto-de-perfil.png" width="226px" height="226px" alt="foto de Sol Martinez">
-                <p>Soy Sol Martinez, diseñadora gráfica y artista visual de Argentina, Buenos Aires. Estudiante en la
-                    licenciatura de Diseño y Comunicación Visual de la Universidad de Lanús. Con un interés especial por el diseño de identidad, editorial y en la exploración de piezas gráficas
-                    combinadas con técnicas manuales.</p>
-            </section>
-        </div>
+        <section>
+            <img src="img/foto-de-perfil.png">
+            <p>Soy Sol Martinez, diseñadora gráfica y artista visual de Argentina, Buenos Aires. Estudiante en Lic. en Diseño y Comunicación Visual de la Universidad de Lanús.Con un interés especial por el diseño de identidad, editorial y en la exploración de piezas gráficas combinadas con técnicas manuales y digitales.</p>
+            <a href="curriculum.html"><button>Ver CV</button></a>
+        </section>
     </main>
 
     <footer>
@@ -77,6 +45,5 @@
         <p class="footer">Computación III</p>
         <a class="footer" href="https://www.behance.net/solcmartinez#" target="_blank"> Behance </a>
     </footer>
-</body>
 
-</html>
+</body>

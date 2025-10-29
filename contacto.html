@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <title>Sol Martinez - TP1</title>
+    <link rel="icon" href="img/favicon-darkmode.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="img/favicon-lightmode.svg" media="(prefers-color-scheme: light)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> <img src="img/logo.svg" width="38px" height="28px" alt="logo sm"> </a>
+            <div class="navegador">    
+                <a href="curriculum.html">SOBRE MI</a>
+                <a href="proyectos.html">PROYECTOS</a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+                <img src="img/lupa.svg" width="14px" height="14px" alt="icon lupa">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>/Contacto.</h1>
+        </section>
+
+        <section>
+            <div>
+               <form method="post" action="mailto:sol.c.martinez00@gmail.com?subject'Formulario del portfolio'" target="_blank" enctype="text/plain">
+                    <label for="Nombre y apellido">Nombre y apellido</label>
+                    <input type="text" name="Nombre y apellido" id="Nombre y apellido" maxlength="40" placeholder="Nombre y apellido" required>
+
+                    <label for="Correo">Correo</label>
+                    <input type="text" name="Correo" id="Correo" maxlength="40" placeholder="Correo" required>
+
+                    <label for="Asunto">Asunto</label>
+                    <input type="text" name="Asunto" id="Asunto" maxlength="40" placeholder="Asunto" required>
+
+                    <p>Tipo de proyecto</p>
+                    <label>Branding<input type="checkbox" name="Branding" value="Branding" id="Branding"> </label>
+                    <label>Editorial<input type="checkbox" name="Editorial" value="Editorial" id="Editorial"> </label>
+                    <label>UX/UI<input type="checkbox" name="UX/UI" value="UX/UI" id="UX/UI"> </label>
+                    <label>Otro<input type="checkbox" name="Otro" value="Otro" id="Otro"> </label>
+                    
+                    <label for="Mnesaje">Mensaje</label>
+                    <textarea name="Mensaje" id="Mensaje"></textarea>
+
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div>
+                <address>
+                    <a href="mailto:sol.c.martinez00@gmail.com">sol.c.martinez00@gmail.com</a>
+                    +54 9 425425425425
+                    Dirección 123
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer">Sol Martinez, 2025</p>
+        <p class="footer">Computación III</p>
+        <a class="footer" href="https://www.behance.net/solcmartinez#" target="_blank"> Behance </a>
+    </footer>
