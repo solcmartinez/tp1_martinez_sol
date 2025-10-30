@@ -96,8 +96,6 @@ h1{
     font-weight: 400;
 }
 
-
-
 button {
     display: flex;
     align-items: center;
@@ -116,7 +114,6 @@ button {
 button:hover {
     background-color: var(--rosa-oscuro);
 }
-
 
 .columnas {
     display: flex;
@@ -157,20 +154,24 @@ p, li {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: var(--beige2);
-    height: 712px;
-    margin-left: 150px;
+    height: 80vh;
+    width:1348px;
     margin-bottom: 0px;
-    padding-left: 100px;
+    padding-left: 60px;
+}
+
+.lista-cv{
+    width: 60%;
 }
 
 .intro{
-    width: 1338px;
+    width: 1348px;
     height: 165px;
     margin-top: 75px;
     display: flex;
     align-items: center;
     background-color: var(--rosa-oscuro);
-    padding-left: 70px;
+    padding-left: 60px;
     color: var(--beige-claro);
 }
 
@@ -348,7 +349,9 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-bottom: 2px solid var(--marron);
 }
 
@@ -367,4 +370,45 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     border-top: 1px solid var(--marron);
     margin-top: 20px;
     padding-top: 20px;
+}
+
+.video-descripcion {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    border-top: 1px solid var(--marron);
+    margin-top: 20px;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.cerrar-galeria{
+    background-color: black;
+    border-bottom: 2px solid black;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    position:static
+}
+
+.galeria-header {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+.main-galeria{
+    background-image: url(img/fondo-galeria.jpg);
+    height: 100vh;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.galeria{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
