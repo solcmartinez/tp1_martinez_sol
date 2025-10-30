@@ -571,7 +571,6 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
 
     footer {
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
         width: 100%;
