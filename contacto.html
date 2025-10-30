@@ -15,25 +15,25 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"> <img src="img/logo.svg" width="38px" height="28px" alt="logo sm"> </a>
+            <a href="index.html"> <img src="img/logo.svg" width="53px" height="40px" alt="logo sm" class="shake-horizontal"> </a>
             <div class="navegador">    
                 <a href="curriculum.html">SOBRE MI</a>
                 <a href="proyectos.html">PROYECTOS</a>
                 <a href="contacto.html">CONTACTO</a>
             </div>
             <div class="buscador">
-                <input type="text" placeholder="Buscar...">
+                <input type="text" placeholder="Buscar..." class="input-buscador">
                 <img src="img/lupa.svg" width="14px" height="14px" alt="icon lupa">
             </div>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="intro">
             <h1>/Contacto.</h1>
         </section>
 
-        <section>
+        <section class="seccion-contacto">
             <div>
                <form method="post" action="mailto:sol.c.martinez00@gmail.com?subject'Formulario del portfolio'" target="_blank" enctype="text/plain">
                     <label for="Nombre y apellido">Nombre y apellido</label>
@@ -45,24 +45,27 @@
                     <label for="Asunto">Asunto</label>
                     <input type="text" name="Asunto" id="Asunto" maxlength="40" placeholder="Asunto" required>
 
-                    <p>Tipo de proyecto</p>
-                    <label>Branding<input type="checkbox" name="Branding" value="Branding" id="Branding"> </label>
-                    <label>Editorial<input type="checkbox" name="Editorial" value="Editorial" id="Editorial"> </label>
-                    <label>UX/UI<input type="checkbox" name="UX/UI" value="UX/UI" id="UX/UI"> </label>
-                    <label>Otro<input type="checkbox" name="Otro" value="Otro" id="Otro"> </label>
+                    <label>Tipo de proyecto</label>
+                    <div class="opciones">
+                        <label>Branding<input type="checkbox" name="Branding" value="Branding" id="Branding"> </label>
+                        <label>Editorial<input type="checkbox" name="Editorial" value="Editorial" id="Editorial"> </label>
+                        <label>UX/UI<input type="checkbox" name="UX/UI" value="UX/UI" id="UX/UI"> </label>
+                        <label>Otro<input type="checkbox" name="Otro" value="Otro" id="Otro"> </label>
+                    </div>
                     
-                    <label for="Mnesaje">Mensaje</label>
+                    <label for="Mensaje">Mensaje</label>
                     <textarea name="Mensaje" id="Mensaje"></textarea>
-
-                    <input type="reset" value="Borrar">
-                    <input type="submit" value="Enviar">
+                    
+                    <div class="botones">
+                        <input type="reset" value="Borrar" >
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>
             </div>
             <div>
                 <address>
                     <a href="mailto:sol.c.martinez00@gmail.com">sol.c.martinez00@gmail.com</a>
-                    +54 9 425425425425
-                    Dirección 123
+                    +54 9 425425425425<br> Dirección 123
                 </address>
             </div>
         </section>

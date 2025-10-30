@@ -7,11 +7,23 @@
     padding: 0;
 }
 
+:root{
+    --rosa-claro: #F6D1CD;
+    --rosa-oscuro: #AE4C61;
+    --beige-claro: #EFEBE1;
+    --beige2: #F4EDDD;
+    --marron: #603813;
+    --negro: #373737;
+    --gris-oscuro: #888787;
+    --gris-claro: #D9D9D9;
+}
+
 header{
     display: flex;
     justify-content: center;
     position: fixed;
-    background: #F4EDDD;
+    z-index: 20;
+    background: var(--beige2);
     background-size: cover;
     border-bottom: 2px solid #603813;
     width: 100%;
@@ -21,7 +33,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    background-color: #F4EDDD;
+    background-color: var(--beige2);
     height: 82px;
     width: 1616px;
     gap: 50px;
@@ -36,65 +48,62 @@ nav {
 .buscador{
     display: flex;
     align-items: center;
-    border: 2px solid #603813;
+    border: 2px solid var(--marron);
     padding-right: 10px;
     gap: 20px;
-    background-color: #EFEBE1;
+    background-color: var(--beige-claro);
 }
 
 a {
-    color: #603813;
+    color: var(--marron);
     font-family: "Roboto Mono", monospace;
     font-size: 1em;
     font-weight: 500;
 }
 
-input {
+.input-buscador {
     height: 28px;
     width: 448px;
-    padding-left: 10px;
+    padding: 10px;
+    margin: 0px;
     font-family: "Roboto Mono", monospace;
     font-size: 0.75em;
-    background-color: #EFEBE1;
-    border: 0px solid #603813;
+    color: var(--negro);
+    background-color: var(--beige-claro);
+    border: 0px solid var(--marron);
 }
 
 a:hover {
-    font-weight: 700;
-    color: #AE4C61;
+    font-weight: 600;
+    color: var(--rosa-oscuro);
 }
 
-body {
-    background-color: #F6D1CD;
+body{
+    background-color: var(--rosa-claro);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1{
     font-family: "Roboto Mono", monospace;
     font-size: 2.2em;
-    font-weight: 700;
+    font-weight: 400;
 }
 
-.intro {
-    font-weight: 700;
-    color: #603813;
-    background-color: #F4EDDD;
-    height: 400px;
-    margin-left: 150px;
-    margin-bottom: 80px;
-    margin-right: 150px;
-    padding-left: 100px;
-    display: flex;
-    align-items: center;
-}
+
 
 button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#F6D1CD;
+    background-color:var(--rosa-claro);
     padding-left: 10px;
     padding-right: 10px;
-    border: 2px solid #603813;
+    border: 2px solid var(--marron);
     border-radius: 20px;
     margin-left: 40%;
     margin-right: 100px;
@@ -103,11 +112,11 @@ button {
 }
 
 button:hover {
-    background-color: #AE4C61;
+    background-color: var(--rosa-oscuro);
 }
 
 .a-boton:hover{
-    color: #F6D1CD;
+    color: var(--rosa-claro);
     font-weight: 700;
 }
 
@@ -117,13 +126,13 @@ button:hover {
 
 .presentacion {
     display: flex;
-    background-color: #F4EDDD;
+    background-color: var(--beige2);
     height: 552px;
     width: 559px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border-left: 2px solid #603813;
+    border-left: 2px solid var(--marron);
     margin-right: 150px;
     padding: 80px;
 }
@@ -132,7 +141,7 @@ h2 {
     font-family: "Roboto Mono", monospace;
     font-size: 2em;
     font-weight: 700;
-    color: #603813;
+    color: var(--marron);
 }
 
 p, li {
@@ -142,18 +151,134 @@ p, li {
     text-wrap: pretty;
     max-width: 80%;
     font-weight: 400;
-    color: #373737;
+    color: var(--negro);
 }
 
 .listas-principales {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #F4EDDD;
+    background-color: var(--beige2);
     height: 712px;
     margin-left: 150px;
     margin-bottom: 0px;
     padding-left: 100px;
+}
+
+.intro{
+    width: 1338px;
+    height: 165px;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    background-color: var(--rosa-oscuro);
+    padding-left: 70px;
+    color: var(--beige-claro);
+}
+
+.seccion-contacto{
+    width: 1408px;
+    height: 80vh;
+    padding-top: 80px;
+    background-color: var(--beige2);
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items:start;
+    justify-content: center;
+}
+
+ form{
+    display: flex;
+    flex-direction: column;
+    width: 488px;
+    height: auto;
+    font-family: "Roboto mono", monospace;
+    font-size: 0.9em;
+    color: var(--marron);
+    gap: 10px;
+ }
+
+
+
+.opciones{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8em;
+    color: var(--negro);
+}
+
+ input[type=checkbox] {
+    margin: 0px 0px 20px 10px;
+    width: auto;
+    height: auto;
+ }
+
+
+ input{
+    border: 2px solid var(--marron);
+    background-color: var(--beige-claro);
+    height: 48px;
+    width: auto;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.75em;
+    color: var(--negro);
+}
+
+textarea{
+    border: 2px solid var(--marron);
+    background-color: var(--beige-claro);
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px ;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.75em;
+    color: var(--negro);
+}
+
+input[type=reset], input[type=submit] {
+    height: 32px;
+    width: fit-content;
+    padding: 0px 24px 0px 24px;
+    border: 2px solid var(--rosa-oscuro);
+    background-color: var(--rosa-claro);
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.75em;
+    color: var(--rosa-oscuro);
+}
+
+input[type=reset] {
+    border: 2px solid var(--gris-oscuro);
+    background-color: var(--gris-claro);
+    color: var(--gris-oscuro);
+}
+
+.botones{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type=reset]:hover, input[type=submit]:hover {
+    background-color: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    color: var(--rosa-claro);
+    cursor: pointer;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto mono", monospace;
+    font-size: 0.9em;
+    color: var(--marron);
+    margin-top: 22px;
 }
 
 footer {
@@ -168,7 +293,8 @@ footer {
     font-family: "Roboto Mono", monospace;
     font-size: 0.7em;
     font-weight: 100;
-    color: #404040;
+    font-weight: 400;
+    color: var(--negro);
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -176,4 +302,16 @@ footer {
 .footer:hover {
     font-size: 0.7em;
     font-weight: 400;
+}
+
+.shake-horizontal:hover {
+animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
+}
+
+@keyframes shake-horizontal {
+0%,100%{transform:translateX(0)}
+10%,30%,50%,70%{transform:translateX(-10px)}
+20%,40%,60%{transform:translateX(10px)}
+80%{transform:translateX(8px)}
+90%{transform:translateX(-8px)}
 }
