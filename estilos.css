@@ -59,6 +59,8 @@ a {
     font-family: "Roboto Mono", monospace;
     font-size: 1em;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 .input-buscador {
@@ -115,10 +117,6 @@ button:hover {
     background-color: var(--rosa-oscuro);
 }
 
-.a-boton:hover{
-    color: var(--rosa-claro);
-    font-weight: 700;
-}
 
 .columnas {
     display: flex;
@@ -139,8 +137,8 @@ button:hover {
 
 h2 {
     font-family: "Roboto Mono", monospace;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.3em;
+    font-weight: 500;
     color: var(--marron);
 }
 
@@ -241,7 +239,7 @@ textarea{
     color: var(--negro);
 }
 
-input[type=reset], input[type=submit] {
+input[type=reset], input[type=submit], .a-boton {
     height: 32px;
     width: fit-content;
     padding: 0px 24px 0px 24px;
@@ -250,6 +248,8 @@ input[type=reset], input[type=submit] {
     font-family: "Roboto Mono", monospace;
     font-size: 0.75em;
     color: var(--rosa-oscuro);
+    margin-top: 20px;
+    
 }
 
 input[type=reset] {
@@ -259,13 +259,13 @@ input[type=reset] {
 }
 
 .botones{
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 488px;
 }
 
-input[type=reset]:hover, input[type=submit]:hover {
+input[type=reset]:hover, input[type=submit]:hover, .a-boton:hover {
     background-color: var(--rosa-oscuro);
     border: 2px solid var(--rosa-oscuro);
     color: var(--rosa-claro);
@@ -314,4 +314,57 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
 20%,40%,60%{transform:translateX(10px)}
 80%{transform:translateX(8px)}
 90%{transform:translateX(-8px)}
+}
+
+.presentacion-index{
+    width: 1348px;
+    background-color: var(--beige2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60vh;
+    padding-left: 60px;
+}
+
+.presentacion-article{
+    display: flex;
+    align-items: start;
+}
+
+.texto-intro {
+    padding-top: 20px;
+    padding-left: 50px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.proyectos {
+    width: 1408px;
+    background-color: var(--beige2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    border-bottom: 2px solid var(--marron);
+}
+
+.article-proyectos {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 90%;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    border-top: 1px solid var(--marron);
+    margin-top: 20px;
+    padding-top: 20px;
 }
