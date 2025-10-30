@@ -450,6 +450,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     header{
         display: flex;
         justify-content: center;
+        height: 82px;
     }
 
     nav {
@@ -460,6 +461,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
         height: 70px;
         width: 70%;
         gap: 50px;
+        padding-top: 10px;
         padding-left: 0px;
         padding-right: 0px;
         flex-wrap: wrap;
@@ -479,11 +481,11 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
         width: 100%;
         gap: 20px;
         background-color: var(--beige-claro);
-        
         position: absolute;
         overflow: hidden;
         height: 0;
-        top: 72px;
+        top: 84px;
+        transition: all .2s;
     }
 
     .menu-hamburguesa:checked + .navegador {
