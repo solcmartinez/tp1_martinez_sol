@@ -327,6 +327,10 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
 90%{transform:translateX(-8px)}
 }
 
+.foto-mobile{
+    display: none;
+}
+
 .presentacion-index{
     width: 1348px;
     background-color: var(--beige2);
@@ -442,7 +446,46 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
         flex-direction: row;
         justify-content: space-between;
         width: 80%;
-}
+    }
+
+    .gif{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .presentacion-index{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    padding-left: 0px;
+    padding-top: 40px;
+    }
+
+    .presentacion-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .texto-intro{
+        padding: 0px;
+        padding-top: 20px;
+        width: 95%;
+        display: flex;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: 80px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -494,5 +537,53 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
         border-top: 0px;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+
+    .gif{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .presentacion-index{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    padding-left: 0px;
+    padding-top: 40px;
+    }
+
+    .presentacion-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .texto-intro{
+        padding: 0px;
+        padding-top: 20px;
+        width: 95%;
+        display: flex;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: 80px;
+    }
+
+    .foto-desk{
+        display: none;
+    }
+
+    .foto-mobile{
+        display: flex;
+        justify-content: center;
     }
 }
