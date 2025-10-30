@@ -41,6 +41,10 @@ nav {
     padding-right: 60px;
 }
 
+#menu-hamburguesa, .label-menu{
+    display: none;
+}
+
 .navegador{
     display: flex;
     justify-content: space-between;
@@ -418,3 +422,74 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     display: flex;
     justify-content: space-between;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .buscador{
+        display: none;
+    }
+
+    header{
+        justify-content: start;
+    }
+
+    nav{
+        width: 80%;
+        justify-content: start;
+    }
+    .navegador{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        background-color: var(--beige2);
+        height: 70px;
+        width: 70%;
+        gap: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .label-menu{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .navegador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+        background-color: var(--beige-claro);
+        
+        position: absolute;
+        overflow: hidden;
+        height: 0;
+        top: 72px;
+    }
+
+    .menu-hamburguesa:checked + .navegador {
+        height: 15vh;
+        border: 2px solid var(--marron);
+        border-top: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
