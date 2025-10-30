@@ -541,7 +541,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
 
     .gif{
         width: 100%;
-        height: 30vh;
+        height: 35vh;
     }
 
     .presentacion-index{
@@ -572,10 +572,17 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     footer {
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 80px;
+        gap: 15px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .footer{
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     .foto-desk{
