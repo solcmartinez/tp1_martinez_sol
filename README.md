@@ -6,6 +6,6 @@ Aclaraciones:
 -La barra del buscador cuenta con un input para escribir, esta característica también se presenta en el formulario en el html "contacto".
 -Favicon modo oscuro y claro.
 -Para no utilizar JavaScript, la ampliación de las imágenes en "Proyectos" las hice creando un html diferente para cada imagen de la galería.
--@media screen con max-width de 500px y 1200 en el index.
+-@media screen con max-width de 500px y 1200px en el index.
 
 Link figma: https://www.figma.com/design/CN7mGMrv8PyxdWPmvFZi69/TP-2---portfolio?node-id=0-1&t=DZoE1bnVcTJxLySa-1
