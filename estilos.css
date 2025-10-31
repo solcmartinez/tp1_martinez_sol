@@ -18,7 +18,7 @@
     --gris-claro: #D9D9D9;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -41,7 +41,7 @@ nav {
     padding-right: 60px;
 }
 
-#menu-hamburguesa, .label-menu{
+#menu-hamburguesa, .label-menu {
     display: none;
 }
 
@@ -51,7 +51,7 @@ nav {
     width: 25%;
 }
 
-.buscador{
+.buscador {
     display: flex;
     align-items: center;
     border: 2px solid var(--marron);
@@ -86,7 +86,7 @@ a:hover {
     color: var(--rosa-oscuro);
 }
 
-body{
+body {
     background-color: var(--rosa-claro);
 }
 
@@ -96,13 +96,13 @@ main {
     align-items: center;
 }
 
-h1{
+h1 {
     font-family: "Roboto Mono", monospace;
     font-size: 2.2em;
     font-weight: 400;
 }
 
-.gif{
+.gif {
     width: 100%;
 }
 
@@ -170,7 +170,7 @@ p, li {
     padding-left: 60px;
 }
 
-.lista-cv{
+.lista-cv {
     width: 60%;
 }
 
@@ -185,7 +185,7 @@ p, li {
     color: var(--beige-claro);
 }
 
-.seccion-contacto{
+.seccion-contacto {
     width: 1408px;
     height: 80vh;
     padding-top: 80px;
@@ -197,7 +197,7 @@ p, li {
     justify-content: center;
 }
 
- form{
+ form {
     display: flex;
     flex-direction: column;
     width: 488px;
@@ -208,9 +208,7 @@ p, li {
     gap: 10px;
  }
 
-
-
-.opciones{
+.opciones {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -226,8 +224,7 @@ p, li {
     height: auto;
  }
 
-
- input{
+ input {
     border: 2px solid var(--marron);
     background-color: var(--beige-claro);
     height: 48px;
@@ -239,7 +236,7 @@ p, li {
     color: var(--negro);
 }
 
-textarea{
+textarea {
     border: 2px solid var(--marron);
     background-color: var(--beige-claro);
     height: 100px;
@@ -260,7 +257,6 @@ input[type=reset], input[type=submit], .a-boton {
     font-size: 0.75em;
     color: var(--rosa-oscuro);
     margin-top: 20px;
-    
 }
 
 input[type=reset] {
@@ -269,7 +265,7 @@ input[type=reset] {
     color: var(--gris-oscuro);
 }
 
-.botones{
+.botones {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -283,7 +279,7 @@ input[type=reset]:hover, input[type=submit]:hover, .a-boton:hover {
     cursor: pointer;
 }
 
-address{
+address {
     display: flex;
     flex-direction: column;
     font-family: "Roboto mono", monospace;
@@ -315,6 +311,8 @@ footer {
     font-weight: 400;
 }
 
+/* Animación logo */
+
 .shake-horizontal:hover {
 animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
 }
@@ -327,11 +325,13 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
 90%{transform:translateX(-8px)}
 }
 
-.foto-mobile{
+/* Fin de animación logo*/
+
+.foto-mobile {
     display: none;
 }
 
-.presentacion-index{
+.presentacion-index {
     width: 1348px;
     background-color: var(--beige2);
     display: flex;
@@ -341,7 +341,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     padding-left: 60px;
 }
 
-.presentacion-article{
+.presentacion-article {
     display: flex;
     align-items: start;
 }
@@ -376,7 +376,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     width: 90%;
 }
 
-.imagenes{
+.imagenes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -396,7 +396,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     gap: 20px;
 }
 
-.cerrar-galeria{
+.cerrar-galeria {
     background-color: black;
     border-bottom: 2px solid black;
     padding: 30px 0px 30px 0px;
@@ -410,7 +410,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     justify-content: end;
 }
 
-.main-galeria{
+.main-galeria {
     background-image: url(img/fondo-galeria.jpg);
     height: 100vh;
     display: flex;
@@ -421,7 +421,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     gap: 50px;
 }
 
-.galeria{
+.galeria {
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -429,31 +429,29 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
 
 
 @media screen and (max-width: 1200px) {
-    .buscador{
+    .buscador {
         display: none;
     }
 
-    header{
+    header {
         justify-content: start;
     }
 
-    nav{
+    nav {
         width: 80%;
         justify-content: start;
     }
-    .navegador{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    
+    .navegador {
         width: 80%;
     }
 
-    .gif{
+    .gif {
         width: 100%;
         height: 60vh;
     }
 
-    .presentacion-index{
+    .presentacion-index {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -463,14 +461,14 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     padding-top: 40px;
     }
 
-    .presentacion-article{
+    .presentacion-article {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: auto;
     }
 
-    .texto-intro{
+    .texto-intro {
         padding: 0px;
         padding-top: 20px;
         width: 95%;
@@ -489,8 +487,8 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
 }
 
 @media screen and (max-width: 500px) {
-
-    header{
+    /* header y menu hamburguesa*/
+    header {
         display: flex;
         justify-content: center;
         height: 82px;
@@ -500,7 +498,6 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
         display: flex;
         align-items: center;
         justify-content:space-between;
-        background-color: var(--beige2);
         height: 70px;
         width: 70%;
         gap: 50px;
@@ -511,12 +508,12 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
         position: relative;
     }
 
-    .label-menu{
+    .label-menu {
         display: flex;
         cursor: pointer;
     }
 
-    .navegador{
+    .navegador {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -538,13 +535,14 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    /* fin de header y menu hamburguesa*/
 
-    .gif{
+    .gif {
         width: 100%;
         height: 35vh;
     }
 
-    .presentacion-index{
+    .presentacion-index {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -554,14 +552,14 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     padding-top: 40px;
     }
 
-    .presentacion-article{
+    .presentacion-article {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: auto;
     }
 
-    .texto-intro{
+    .texto-intro {
         padding: 0px;
         padding-top: 20px;
         width: 95%;
@@ -579,16 +577,16 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
         padding-bottom: 40px;
     }
 
-    .footer{
+    .footer {
         padding-top: 0px;
         padding-bottom: 0px;
     }
 
-    .foto-desk{
+    .foto-desk {
         display: none;
     }
 
-    .foto-mobile{
+    .foto-mobile {
         display: flex;
         justify-content: center;
     }
