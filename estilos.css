@@ -471,7 +471,7 @@ animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both
     .texto-intro {
         padding: 0px;
         padding-top: 20px;
-        width: 95%;
+        width: 90%;
         display: flex;
         align-items: center;
     }
